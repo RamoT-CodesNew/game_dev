@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Guess a Number</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<main class="container">
+  <header class="card header-card">
+    <h1>Guess the Number</h1>
+    <h2>Pick a number between 1 and 99 — 7 attempts.</h2>
+  </header>
+
+  <section class="card game-card" id="gameCard">
+    <div class="controls">
+      <label for="playerGuess">Enter a guess:</label>
+      <input type="text" id="playerGuess" size="5" inputmode="numeric" />
+      <button id="guessBtn">Guess</button>
+      <button id="resetBtn" class="hidden">Reset</button>
+    </div>
+
+    <div class="status">
+      <div>Attempts left: <span id="attemptsLeft">7</span></div>
+      <div>Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></div>
+    </div>
+
+    <div class="feedback" id="feedback">Make your first guess.</div>
+
+    <div class="previous">Previous guesses: <span id="previousGuesses"></span></div>
+  </section>
+
+  <footer class="card footer-card">
+    <small>Open index.html in a browser to play.</small>
+  </footer>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
